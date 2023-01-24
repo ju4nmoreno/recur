@@ -1,0 +1,12 @@
+{
+  "name": "recur",
+  "version": "1.0.0",
+  "description": "From an array of words, search an ArrayMatrix, if these words can be found ```javascript const matrix = [   [\"C\", \"A\", \"T\"],    [\"O\", \"S\", \"K\"],   [\"P\", \"Y\", \"U\"] ];",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
