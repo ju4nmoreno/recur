@@ -1,17 +1,42 @@
-# 2 dimensional array
+# 2-dimensional array
 
 From an array of words, search an ArrayMatrix, if these words can be found
 - can't find 'SOS' because the matrix only has one S
 ```javascript
-const matrix = [
+const dic = [
   ["C", "A", "T"], 
   ["O", "S", "K"],
   ["P", "Y", "U"]
 ];
+// Esta es la primera estructura de datos Dictionary
+// La primera parte del algo es crear una funcion que dado un dictionary y un string le dice si el String hace parte del Dictinary
+//algo asi esto es un predicado
+function  predicate(string, dictionary) {
+  return dictionary.filter(value => value == string).reduce("SOS", 
+  //https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+  )
+}
+// Ya con esta funcion va a usar recurcion sobre list y esa es la version mas facil
+
+function recur(list, accumulator, dic){
+  //caso base
+  const [head, ...tail] = arr;
+  if(list.isEmpty) { return accumulator }
+  else if(predicate(head, dic) ? recur(tail, acc.append(head)): recur(tail, acc))
+}
 
 const arr = [ "COPY", "CAT", "ASK", "SOS" ] // output [ 'COPY', 'CAT', 'ASK' ]
+
+// Y aca ejecuta el programa
+
+recur(arr, [], dic)
+
+// eso seria el esqueleto que habria que llenar bien
+
+
+
 ```
-my soluction
+my solution
 
 ```javascript
 const matrix = [
