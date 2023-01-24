@@ -1,6 +1,7 @@
 # 2 dimensional array
 
 From an array of words, search an ArrayMatrix, if these words can be found
+- can't find 'SOS' because the matrix only has one S
 ```javascript
 const matrix = [
   ["C", "A", "T"], 
